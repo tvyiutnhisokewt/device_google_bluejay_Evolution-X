@@ -1,0 +1,2 @@
+on init
+   insmod /lib/modules/ftm5.ko
