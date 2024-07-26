@@ -95,6 +95,7 @@
 
   <gll_features
        EnableNicAutoSwitch="true"
+       ConstellationAutoSwitchOffNavOnly="true"
   />
 
 </glgps>
