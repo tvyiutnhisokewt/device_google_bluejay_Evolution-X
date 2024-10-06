@@ -2,10 +2,6 @@
 
 # product partition
 
-# AiAi
-product/priv-app/DeviceIntelligenceNetworkPrebuilt-v.U.14.playstore/DeviceIntelligenceNetworkPrebuilt-v.U.14.playstore.apk;PRESIGNED
-product/priv-app/DevicePersonalizationPrebuiltPixel2021-v.U.14.playstore/DevicePersonalizationPrebuiltPixel2021-v.U.14.playstore.apk;PRESIGNED
-
 # Audio
 product/etc/ambient/matcher_tah.leveldb
 product/etc/firmware/music_detector.descriptor
