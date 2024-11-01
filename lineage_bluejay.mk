@@ -15,11 +15,13 @@ VENDOR_PATH := vendor/google/bluejay
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 $(call inherit-product, device/google/gs101/lineage_common.mk)
 $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
+$(call inherit-product, device/google/gs101/evolution_common.mk)
+$(call inherit-product, $(DEVICE_PATH)/device-evolution.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_BRAND := google
+PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 6a
-PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+PRODUCT_NAME := $(DEVICE_CODENAME)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
