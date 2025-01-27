@@ -3,8 +3,8 @@
 # product partition
 
 # AiAi
-product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02.apk;PRESIGNED
-product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk;PRESIGNED
+product/priv-app/DeviceIntelligenceNetworkPrebuilt-U.32_V.7_playstore_astrea_20240725.00_RC01/DeviceIntelligenceNetworkPrebuilt-U.32_V.7_playstore_astrea_20240725.00_RC01.apk;PRESIGNED
+product/priv-app/DevicePersonalizationPrebuiltPixel2021-U.32_V.7_playstore_aiai_20240725.00_RC08/DevicePersonalizationPrebuiltPixel2021-U.32_V.7_playstore_aiai_20240725.00_RC08.apk;PRESIGNED
 
 # Audio
 product/etc/ambient/matcher_tah.leveldb
@@ -19,6 +19,11 @@ product/priv-app/GoogleCamera/GoogleCamera.apk;OVERRIDES=Aperture,Camera2;PRESIG
 # Camera extensions
 product/etc/permissions/androidx.camera.extensions.impl.xml
 product/priv-app/PixelCameraServices/PixelCameraServices.apk;PRESIGNED
+
+# Camera services
+product/etc/permissions/com.google.pixel.camera.connectivity.impl.xml
+product/etc/permissions/com.google.pixel.camera.services.cameraidremapper.impl.xml
+product/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.impl.xml
 
 # Felica
 product/etc/felica/common.cfg
@@ -60,7 +65,7 @@ product/lib/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm/libdmengin
 product/lib/libdmjavaplugin.so;SYMLINK=product/priv-app/DMService/lib/arm/libdmjavaplugin.so
 product/lib64/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmengine.so
 product/lib64/libdmjavaplugin.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmjavaplugin.so
-product/priv-app/CarrierSettings_signed_47.0.602606545/CarrierSettings_signed_47.0.602606545.apk;PRESIGNED
+product/priv-app/CarrierSettings_signed_49.0.645958608/CarrierSettings_signed_49.0.645958608.apk;PRESIGNED
 product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
 product/priv-app/ConnMO/ConnMO.apk
 product/priv-app/DCMO/DCMO.apk
@@ -81,6 +86,11 @@ product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED
 product/priv-app/OemDmTrigger/OemDmTrigger.apk
 product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
 
+# system partition
+
+# IMS
+system/bin/oem-iptables-init.sh
+
 # system_ext partition
 
 # Camera extensions
@@ -90,6 +100,16 @@ system_ext/etc/permissions/com.google.android.camerax.extensions.xml
 system_ext/framework/com.google.android.camera.experimental2022_system.jar
 system_ext/framework/com.google.android.camera.extensions.jar
 system_ext/framework/com.google.android.camerax.extensions.jar
+
+# Camera services
+system_ext/app/PersistentBackgroundCameraServices/PersistentBackgroundCameraServices.apk
+system_ext/etc/permissions/com.google.pixel.camera.connectivity.xml
+system_ext/etc/permissions/com.google.pixel.camera.services.cameraidremapper.xml
+system_ext/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.xml
+system_ext/etc/vintf/manifest/com.google.pixel.camera.services@1.0-service-google.xml
+system_ext/framework/com.google.pixel.camera.connectivity.jar
+system_ext/framework/com.google.pixel.camera.services.cameraidremapper.jar
+system_ext/framework/com.google.pixel.camera.services.lyricconfigprovider.jar
 
 # Edge TPU
 system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service
@@ -118,6 +138,11 @@ system_ext/lib64/libmediaadaptor.so
 system_ext/priv-app/ShannonIms/ShannonIms.apk;PRESIGNED
 system_ext/priv-app/ShannonQualifiedNetworksService/ShannonQualifiedNetworksService.apk;PRESIGNED
 system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
+
+# IWLAN
+system_ext/etc/permissions/privapp-permlist_com.google.pixel.iwlan.xml
+system_ext/etc/sysconfig/sysconfig_com.google.pixel.iwlan.xml
+system_ext/priv-app/PixelIwlan/PixelIwlan.apk
 
 # Permissions
 system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml

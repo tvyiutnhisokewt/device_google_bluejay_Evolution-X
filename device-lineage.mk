@@ -18,6 +18,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES := \
     HbmSVManagerOverlay
 
+# IWLAN
+PRODUCT_PACKAGES += \
+    Iwlan
+
 # Build necessary packages for vendor
 
 # Codec2
