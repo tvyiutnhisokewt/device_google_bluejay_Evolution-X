@@ -76,6 +76,13 @@
     <!-- Camera 1 is the front camera on barbet -->
     <string translatable="false" name="config_protectedCameraId">1</string>
 
+    <!-- The properties of the face auth camera in pixels -->
+    <integer-array name="config_face_auth_props">
+      <item>507</item>  <!-- sensorLocationX -->
+      <item>66</item>   <!-- sensorLocationY -->
+      <item>33</item>   <!--sensorRadius -->
+    </integer-array>
+
     <!-- Comma-separated list of packages to exclude from camera protection. In our case,
     ignore the gaze detection package -->
     <string translatable="false" name="config_cameraProtectionExcludedPackages">com.google.android.as</string>
