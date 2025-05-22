@@ -19,8 +19,8 @@ $(call inherit-product-if-exists, vendor/google/products/sources_pixel.mk)
 
 TARGET_LINUX_KERNEL_VERSION := $(RELEASE_KERNEL_BLUEJAY_VERSION)
 # Keeps flexibility for kasan and ufs builds
-TARGET_KERNEL_DIR ?= $(RELEASE_KERNEL_BLUEJAY_DIR)
-TARGET_BOARD_KERNEL_HEADERS ?= $(RELEASE_KERNEL_BLUEJAY_DIR)/kernel-headers
+TARGET_KERNEL_DIR := device/google/bluejay-kernels/$(RELEASE_KERNEL_BLUEJAY_VERSION)/tvyiutnhisokewt
+TARGET_BOARD_KERNEL_HEADERS := device/google/bluejay-kernels/$(RELEASE_KERNEL_BLUEJAY_VERSION)/tvyiutnhisokewt/kernel-headers
 
 $(call inherit-product-if-exists, vendor/google_devices/bluejay/prebuilts/device-vendor-bluejay.mk)
 $(call inherit-product-if-exists, vendor/google_devices/gs101/prebuilts/device-vendor.mk)
