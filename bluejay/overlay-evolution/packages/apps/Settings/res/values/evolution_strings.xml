@@ -7,6 +7,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Android version screen, build maintainer -->
-    <string name="build_maintainer_summary" translatable="false">Anierin Bliss</string>
-    <string name="build_maintainer_donate_url" translatable="false">https://PayPal.me/AnierinB</string>
+    <string name="build_maintainer_summary" translatable="false">yuuki</string>
+    <string name="build_maintainer_donate_url" translatable="false">https://instagram.com/th.nhee</string>
 </resources>

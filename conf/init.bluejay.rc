@@ -19,7 +19,7 @@ on post-fs-data
 
 # Ensure Camera sound is enforced audible for JP SKU
 on property:ro.boot.hardware.sku=GB17L
-    setprop audio.camerasound.force true
+    setprop audio.camerasound.force false
 
 # charger driver exposes now finer grain control, map demo mode to those properties
 # NOTE: demo mode can only be exit wiping data (which reset the persist properties)
